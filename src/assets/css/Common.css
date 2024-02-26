@@ -1,0 +1,42 @@
+.el-table {
+    margin-top: 20px;
+}
+.page-nation-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.el-pagination {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.el-form {
+    margin-top: 20px;
+    border-bottom: #d4dada 1px solid;
+    padding: 0 20px;
+}
+.el-table {
+    height: 480px;
+    overflow: scroll;
+}
+.el-dialog__header {
+    text-align: left;
+    border-bottom: #d4dada 1px solid;
+}
+.data-op-div {
+    margin-top: 20px;
+    text-align: left;
+}
+.form-split-div {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: left;
+    font-weight: bolder;
+}
+.row-op-a {
+    cursor: pointer;
+    padding: 2px 8px;
+    margin-right: 4px;
+}
