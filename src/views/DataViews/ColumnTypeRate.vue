@@ -13,8 +13,6 @@ export default {
       const myChart = echarts.init(chartDom)
       const option = {
         title: {
-          text: 'Referer of a Website',
-          subtext: 'Fake Data',
           left: 'center'
         },
         tooltip: {
@@ -26,15 +24,13 @@ export default {
         },
         series: [
           {
-            name: 'Access From',
             type: 'pie',
             radius: '50%',
             data: [
-              { value: 1048, name: 'Search Engine' },
-              { value: 735, name: 'Direct' },
-              { value: 580, name: 'Email' },
-              { value: 484, name: 'Union Ads' },
-              { value: 300, name: 'Video Ads' }
+              { value: 1048, name: '数字' },
+              { value: 735, name: '字符串' },
+              { value: 580, name: '时间' },
+              { value: 484, name: '文本' }
             ],
             emphasis: {
               itemStyle: {
