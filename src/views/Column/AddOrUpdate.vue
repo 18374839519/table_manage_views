@@ -42,6 +42,13 @@
           </el-form-item>
         </el-col>
         <el-col :span="12">
+          <el-form-item label="类型：">
+            <el-select v-model.trim="formData.type" clearable placeholder="请选择类型">
+              <el-option v-for="(item, index) in typeList" :key="index" :value="item.value" :label="item.label"></el-option>
+            </el-select>
+          </el-form-item>
+        </el-col>
+        <el-col :span="12">
           <el-form-item label="是否主键：">
             <el-select v-model.trim="formData.primaryKey" clearable placeholder="请选择是否主键">
               <el-option v-for="(item, index) in primaryKeyList" :key="index" :value="item.value" :label="item.label"></el-option>
@@ -98,6 +105,10 @@ export default {
       statusList: [
         { value: 1, label: '可用' },
         { value: 2, label: '禁用' }
+      ],
+      typeList: [
+        { value: 1, label: '默认字段' },
+        { value: 2, label: '自定义字段' }
       ]
     }
   },
@@ -143,7 +154,8 @@ export default {
               columnLength: -1,
               columnType: 'String',
               primaryKey: 2,
-              status: 1
+              status: 1,
+              type: 2
             }
           } else {
             this.formData = this.record

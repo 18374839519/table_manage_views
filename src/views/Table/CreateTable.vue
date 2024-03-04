@@ -41,6 +41,15 @@
           </el-form-item>
         </el-col>
       </el-row>
+      <el-row>
+        <el-col :span="12">
+          <el-form-item label="创建Java文件：">
+            <el-radio-group v-model.trim="formData.createJavaFiles">
+              <el-radio v-for="(item, index) in boolList" :key="index" :label="item.value">{{ item.label }}</el-radio>
+            </el-radio-group>
+          </el-form-item>
+        </el-col>
+      </el-row>
       <div class="form-split-div">表字段信息</div>
       <el-row>
         <el-col :span="4">字段名称</el-col>
@@ -80,6 +89,7 @@ export default {
       formData: {
         tableType: 2,
         status: 1,
+        createJavaFiles: 2,
         columnList: []
       },
       tableTypeList: [
@@ -89,6 +99,10 @@ export default {
       statusList: [
         { value: 1, label: '可用' },
         { value: 2, label: '禁用' }
+      ],
+      boolList: [
+        { value: 1, label: '是' },
+        { value: 2, label: '否' }
       ],
       columnList: [],
       queryParam: {

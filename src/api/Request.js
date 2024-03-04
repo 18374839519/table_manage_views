@@ -5,7 +5,8 @@ axios.defaults.headers.post['Content-Type'] = 'application/json'
 /* axios get */
 export function get(url) {
   return function(params) {
-    return axios.get(url + '/' + params).then(res => {
+    const addr = params ? url + '/' + params : url
+    return axios.get(addr).then(res => {
       return res.data
     }).catch(e => {
       console.log(e)

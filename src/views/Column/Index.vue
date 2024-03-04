@@ -34,6 +34,11 @@
           {{ scope.row.columnLength === -1 ? '不限' : scope.row.columnLength }}
         </template>
       </el-table-column>
+      <el-table-column prop="primaryKey" label="类型">
+        <template #default="scope">
+          {{ scope.row.type === 1 ? '默认字段' : '自定义字段' }}
+        </template>
+      </el-table-column>
       <el-table-column prop="primaryKey" label="是否主键">
         <template #default="scope">
           {{ scope.row.primaryKey === 1 ? '是' : '否' }}

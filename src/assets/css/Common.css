@@ -16,10 +16,6 @@
     border-bottom: #d4dada 1px solid;
     padding: 0 20px;
 }
-.el-table {
-    height: 480px;
-    overflow: scroll;
-}
 .el-dialog__header {
     text-align: left;
     border-bottom: #d4dada 1px solid;
@@ -39,4 +35,7 @@
     cursor: pointer;
     padding: 2px 8px;
     margin-right: 4px;
+}
+.el-card {
+    height: 100%;
 }

@@ -18,15 +18,18 @@
       </el-sub-menu>
     </el-menu>
   </div>
+  <DataViews v-if="activeIndex === '1-1'"></DataViews>
   <Column v-if="activeIndex === '1-2-1'"></Column>
   <Table v-if="activeIndex === '1-2-2'"></Table>
 </template>
 
 <script>
+import DataViews from '@/views/DataViews/Index.vue'
 import Column from '@/views/Column/Index.vue'
 import Table from '@/views/Table/Index.vue'
 export default {
   components: {
+    DataViews,
     Column,
     Table
   },
