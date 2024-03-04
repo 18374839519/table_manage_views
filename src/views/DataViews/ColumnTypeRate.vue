@@ -1,5 +1,6 @@
 <template>
   <div>
+    333
     <div id="main"></div>
   </div>
 </template>
@@ -47,6 +48,7 @@ export default {
         ]
       }
       myChart.setOption(option)
+      myChart.resize()
     }
   },
   mounted () {
