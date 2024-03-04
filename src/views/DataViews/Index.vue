@@ -18,7 +18,9 @@
             <a href="javascrip:void(0)">更多</a>
           </div>
         </div>
-        <column-count-card ref="ColumnCountCard"></column-count-card>
+        <div>
+          <column-count-card ref="ColumnCountCard"></column-count-card>
+        </div>
       </div>
     </div>
   </div>
@@ -72,6 +74,7 @@ export default {
   margin: 20px 1.65% 0;
   border: #d4dada 1px solid;
   border-radius: 5px;
+  overflow: auto;
 }
 .report-view-card-heard-div {
   display: flex;
