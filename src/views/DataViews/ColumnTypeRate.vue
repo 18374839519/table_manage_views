@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="main" style="height: 240px; width: 100%;"></div>
+    <div id="main" style="height: 240px; width: 90%;"></div>
   </div>
 </template>
 <script>
@@ -25,7 +25,7 @@ export default {
         series: [
           {
             type: 'pie',
-            radius: '50%',
+            radius: '80%',
             data: [
               { value: 1048, name: '数字' },
               { value: 735, name: '字符串' },
