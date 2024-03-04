@@ -29,8 +29,8 @@ export default {
             data: [
               { value: 1048, name: '数字' },
               { value: 735, name: '字符串' },
-              { value: 580, name: '时间' },
-              { value: 484, name: '文本' }
+              { value: 102, name: '时间' },
+              { value: 6, name: '文本' }
             ],
             emphasis: {
               itemStyle: {
