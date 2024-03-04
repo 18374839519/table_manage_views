@@ -22,15 +22,25 @@
           <column-count-card ref="ColumnCountCard"></column-count-card>
         </div>
       </div>
+      <div class="report-view-card-div">
+        <div class="report-view-card-heard-div">
+          <div class="report-view-card-title-div">字段类型占比</div>
+        </div>
+        <div>
+          <column-type-rate ref="ColumnTypeRate"></column-type-rate>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 <script>
 import { getTableColumnCount } from '@/api/Report'
 import ColumnCountCard from '@/views/DataViews/ColumnCountCard.vue'
+import ColumnTypeRate from '@/views/DataViews/ColumnTypeRate.vue'
 
 export default {
   components: {
+    ColumnTypeRate,
     ColumnCountCard
   },
   data() {
